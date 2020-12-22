@@ -1,0 +1,526 @@
+x=900
+y=900
+x1=450
+y1=890
+speed=6
+def setup() :
+    size(x,y)
+    fill(0)
+
+def keyPressed():
+    global x1,y1
+    if key == 'w':
+        y1=y1-speed
+    if key == 's':
+        y1=y1+speed
+    if key == 'a':
+        x1=x1-speed
+    if key == 'd':
+        x1=x1+speed
+
+
+def draw():
+    
+    global x1,y1,win
+    background(0)
+    ellipse(x1,y1,10,10)
+    
+    rect(200,10,500,7)
+    fill(100,200,50)
+    rect(15,75,50,50)
+    rect(167,75,50,50)
+    rect(309,75,50,50)
+    rect(443,75,50,50)
+    rect(589,75,50,50)
+    rect(730,75,50,50)
+    rect(866,75,50,50)
+    
+    rect(70,175,50,50)
+    rect(210,175,50,50)
+    rect(350,175,50,50)
+    rect(490,175,50,50)
+    rect(630,175,50,50)
+    rect(770,175,50,50)
+    
+    rect(10,275,50,50)
+    rect(125,275,50,50)
+    rect(265,275,50,50)
+    rect(405,275,50,50)
+    rect(545,275,50,50)
+    rect(685,275,50,50)
+    rect(825,275,50,50)
+    
+    rect(90,375,50,50)
+    rect(230,375,50,50)
+    rect(370,375,50,50)
+    rect(510,375,50,50)
+    rect(650,375,50,50)
+    rect(790,375,50,50)
+    
+    rect(10,475,50,50)
+    rect(150,475,50,50)
+    rect(290,475,50,50)
+    rect(430,475,50,50)
+    rect(570,475,50,50)
+    rect(710,475,50,50)
+    rect(850,475,50,50)
+    
+    rect(70,575,50,50)
+    rect(210,575,50,50)
+    rect(350,575,50,50)
+    rect(490,575,50,50)
+    rect(630,575,50,50)
+    rect(770,575,50,50)
+    
+    rect(10,675,50,50)
+    rect(140,675,50,50)
+    rect(280,675,50,50)
+    rect(420,675,50,50)
+    rect(560,675,50,50)
+    rect(700,675,50,50)
+    rect(840,675,50,50)
+    
+    rect(77,775,50,50)
+    rect(217,775,50,50)
+    rect(357,775,50,50)
+    rect(497,775,50,50)
+    rect(637,775,50,50)
+    rect(777,775,50,50)
+    
+    if (x1 in range(200,700) and y1 in range(0,30)):
+        win=True
+        if (win == True):
+            textSize(100)
+            filter(BLUR, 5)
+            fill(255,255,255)         
+            stroke(255,255,255)
+            text("Y  O  U     W  I  N", width/2-425, 300)
+    if (x1 in range(20,75) and y1 in range(65,135)):
+        win=False
+        if (win == False):
+            textSize(100)
+            filter(BLUR, 5)
+            fill(255,255,255)         
+            stroke(255,255,255)
+            text("G A M E  O V E R", width/2-425, 300)
+    if (x1 in range(152,225) and y1 in range(65,135)):
+        win=False
+        if (win == False):
+            textSize(100)
+            filter(BLUR, 5)
+            fill(255,255,255)         
+            stroke(255,255,255)
+            text("G A M E  O V E R", width/2-425, 300)
+    if (x1 in range(294,367) and y1 in range(65,135)):
+        win=False
+        if (win == False):
+            textSize(100)
+            filter(BLUR, 5)
+            fill(255,255,255)         
+            stroke(255,255,255)
+            text("G A M E  O V E R", width/2-425, 300)
+    if (x1 in range(428,501) and y1 in range(65,135)):
+        win=False
+        if (win == False):
+            textSize(100)
+            filter(BLUR, 5)
+            fill(255,255,255)         
+            stroke(255,255,255)
+            text("G A M E  O V E R", width/2-425, 300)
+    if (x1 in range(574,647) and y1 in range(65,135)):
+        win=False
+        if (win == False):
+            textSize(100)
+            filter(BLUR, 5)
+            fill(255,255,255)         
+            stroke(255,255,255)
+            text("G A M E  O V E R", width/2-425, 300)
+    if (x1 in range(715,788) and y1 in range(65,135)):
+        win=False
+        if (win == False):
+            textSize(100)
+            filter(BLUR, 5)
+            fill(255,255,255)         
+            stroke(255,255,255)
+            text("G A M E  O V E R", width/2-425, 300)
+    if (x1 in range(851,924) and y1 in range(65,135)):
+        win=False
+        if (win == False):
+            textSize(100)
+            filter(BLUR, 5)
+            fill(255,255,255)         
+            stroke(255,255,255)
+            text("G A M E  O V E R", width/2-425, 300)
+            
+    if (x1 in range(55,128) and y1 in range(165,235)):
+        win=False
+        if (win == False):
+            textSize(100)
+            filter(BLUR, 5)
+            fill(255,255,255)         
+            stroke(255,255,255)
+            text("G A M E  O V E R", width/2-425, 300)
+    if (x1 in range(200,268) and y1 in range(160,235)):
+        win=False
+        if (win == False):
+            textSize(100)
+            filter(BLUR, 5)
+            fill(255,255,255)         
+            stroke(255,255,255)
+            text("G A M E  O V E R", width/2-425, 300)
+    if (x1 in range(335,408) and y1 in range(165,235)):
+        win=False
+        if (win == False):
+            textSize(100)
+            filter(BLUR, 5)
+            fill(255,255,255)         
+            stroke(255,255,255)
+            text("G A M E  O V E R", width/2-425, 300)
+    if (x1 in range(475,548) and y1 in range(165,235)):
+        win=False
+        if (win == False):
+            textSize(100)
+            filter(BLUR, 5)
+            fill(255,255,255)         
+            stroke(255,255,255)
+            text("G A M E  O V E R", width/2-425, 300)
+    if (x1 in range(615,688) and y1 in range(165,235)):
+        win=False
+        if (win == False):
+            textSize(100)
+            filter(BLUR, 5)
+            fill(255,255,255)         
+            stroke(255,255,255)
+            text("G A M E  O V E R", width/2-425, 300)
+    if (x1 in range(755,828) and y1 in range(165,235)):
+        win=False
+        if (win == False):
+            textSize(100)
+            filter(BLUR, 5)
+            fill(255,255,255)         
+            stroke(255,255,255)
+            text("G A M E  O V E R", width/2-425, 300)
+
+    if (x1 in range(0,68) and y1 in range(265,335)):
+        win=False
+        if (win == False):
+            textSize(100)
+            filter(BLUR, 5)
+            fill(255,255,255)         
+            stroke(255,255,255)
+            text("G A M E  O V E R", width/2-425, 300)
+    if (x1 in range(110,183) and y1 in range(265,335)):
+        win=False
+        if (win == False):
+            textSize(100)
+            filter(BLUR, 5)
+            fill(255,255,255)         
+            stroke(255,255,255)
+            text("G A M E  O V E R", width/2-425, 300)
+    if (x1 in range(250,323) and y1 in range(265,335)):
+        win=False
+        if (win == False):
+            textSize(100)
+            filter(BLUR, 5)
+            fill(255,255,255)         
+            stroke(255,255,255)
+            text("G A M E  O V E R", width/2-425, 300)
+    if (x1 in range(390,463) and y1 in range(265,335)):
+        win=False
+        if (win == False):
+            textSize(100)
+            filter(BLUR, 5)
+            fill(255,255,255)         
+            stroke(255,255,255)
+            text("G A M E  O V E R", width/2-425, 300)
+    if (x1 in range(530,603) and y1 in range(265,335)):
+        win=False
+        if (win == False):
+            textSize(100)
+            filter(BLUR, 5)
+            fill(255,255,255)         
+            stroke(255,255,255)
+            text("G A M E  O V E R", width/2-425, 300)
+    if (x1 in range(670,743) and y1 in range(265,335)):
+        win=False
+        if (win == False):
+            textSize(100)
+            filter(BLUR, 5)
+            fill(255,255,255)         
+            stroke(255,255,255)
+            text("G A M E  O V E R", width/2-425, 300)
+    if (x1 in range(810,883) and y1 in range(265,335)):
+        win=False
+        if (win == False):
+            textSize(100)
+            filter(BLUR, 5)
+            fill(255,255,255)         
+            stroke(255,255,255)
+            text("G A M E  O V E R", width/2-425, 300)
+    
+    if (x1 in range(75,148) and y1 in range(365,435)):
+        win=False
+        if (win == False):
+            textSize(100)
+            filter(BLUR, 5)
+            fill(255,255,255)         
+            stroke(255,255,255)
+            text("G A M E  O V E R", width/2-425, 300)
+    if (x1 in range(215,288) and y1 in range(365,435)):
+        win=False
+        if (win == False):
+            textSize(100)
+            filter(BLUR, 5)
+            fill(255,255,255)         
+            stroke(255,255,255)
+            text("G A M E  O V E R", width/2-425, 300)
+    if (x1 in range(355,428) and y1 in range(365,435)):
+        win=False
+        if (win == False):
+            textSize(100)
+            filter(BLUR, 5)
+            fill(255,255,255)         
+            stroke(255,255,255)
+            text("G A M E  O V E R", width/2-425, 300)
+    if (x1 in range(495,568) and y1 in range(365,435)):
+        win=False
+        if (win == False):
+            textSize(100)
+            filter(BLUR, 5)
+            fill(255,255,255)         
+            stroke(255,255,255)
+            text("G A M E  O V E R", width/2-425, 300)
+    if (x1 in range(635,708) and y1 in range(365,435)):
+        win=False
+        if (win == False):
+            textSize(100)
+            filter(BLUR, 5)
+            fill(255,255,255)         
+            stroke(255,255,255)
+            text("G A M E  O V E R", width/2-425, 300)
+    if (x1 in range(775,848) and y1 in range(365,435)):
+        win=False
+        if (win == False):
+            textSize(100)
+            filter(BLUR, 5)
+            fill(255,255,255)         
+            stroke(255,255,255)
+            text("G A M E  O V E R", width/2-425, 300)
+            
+    if (x1 in range(0,68) and y1 in range(465,535)):
+        win=False
+        if (win == False):
+            textSize(100)
+            filter(BLUR, 5)
+            fill(255,255,255)         
+            stroke(255,255,255)
+            text("G A M E  O V E R", width/2-425, 300)
+    if (x1 in range(135,208) and y1 in range(465,535)):
+        win=False
+        if (win == False):
+            textSize(100)
+            filter(BLUR, 5)
+            fill(255,255,255)         
+            stroke(255,255,255)
+            text("G A M E  O V E R", width/2-425, 300)
+    if (x1 in range(275,348) and y1 in range(465,535)):
+        win=False
+        if (win == False):
+            textSize(100)
+            filter(BLUR, 5)
+            fill(255,255,255)         
+            stroke(255,255,255)
+            text("G A M E  O V E R", width/2-425, 300)
+    if (x1 in range(415,488) and y1 in range(465,535)):
+        win=False
+        if (win == False):
+            textSize(100)
+            filter(BLUR, 5)
+            fill(255,255,255)         
+            stroke(255,255,255)
+            text("G A M E  O V E R", width/2-425, 300)
+    if (x1 in range(555,628) and y1 in range(465,535)):
+        win=False
+        if (win == False):
+            textSize(100)
+            filter(BLUR, 5)
+            fill(255,255,255)         
+            stroke(255,255,255)
+            text("G A M E  O V E R", width/2-425, 300)
+    if (x1 in range(695,768) and y1 in range(465,535)):
+        win=False
+        if (win == False):
+            textSize(100)
+            filter(BLUR, 5)
+            fill(255,255,255)         
+            stroke(255,255,255)
+            text("G A M E  O V E R", width/2-425, 300)
+    if (x1 in range(835,908) and y1 in range(465,535)):
+        win=False
+        if (win == False):
+            textSize(100)
+            filter(BLUR, 5)
+            fill(255,255,255)         
+            stroke(255,255,255)
+            text("G A M E  O V E R", width/2-425, 300)
+            
+    if (x1 in range(55,128) and y1 in range(565,635)):
+        win=False
+        if (win == False):
+            textSize(100)
+            filter(BLUR, 5)
+            fill(255,255,255)         
+            stroke(255,255,255)
+            text("G A M E  O V E R", width/2-425, 300)
+    if (x1 in range(195,268) and y1 in range(565,635)):
+        win=False
+        if (win == False):
+            textSize(100)
+            filter(BLUR, 5)
+            fill(255,255,255)         
+            stroke(255,255,255)
+            text("G A M E  O V E R", width/2-425, 300)
+    if (x1 in range(335,408) and y1 in range(565,635)):
+        win=False
+        if (win == False):
+            textSize(100)
+            filter(BLUR, 5)
+            fill(255,255,255)         
+            stroke(255,255,255)
+            text("G A M E  O V E R", width/2-425, 300)
+    if (x1 in range(475,548) and y1 in range(565,635)):
+        win=False
+        if (win == False):
+            textSize(100)
+            filter(BLUR, 5)
+            fill(255,255,255)         
+            stroke(255,255,255)
+            text("G A M E  O V E R", width/2-425, 300)
+    if (x1 in range(615,688) and y1 in range(565,635)):
+        win=False
+        if (win == False):
+            textSize(100)
+            filter(BLUR, 5)
+            fill(255,255,255)         
+            stroke(255,255,255)
+            text("G A M E  O V E R", width/2-425, 300)
+    if (x1 in range(755,828) and y1 in range(565,635)):
+        win=False
+        if (win == False):
+            textSize(100)
+            filter(BLUR, 5)
+            fill(255,255,255)         
+            stroke(255,255,255)
+            text("G A M E  O V E R", width/2-425, 300)
+            
+    if (x1 in range(0,68) and y1 in range(665,735)):
+        win=False
+        if (win == False):
+            textSize(100)
+            filter(BLUR, 5)
+            fill(255,255,255)         
+            stroke(255,255,255)
+            text("G A M E  O V E R", width/2-425, 300)
+    if (x1 in range(125,198) and y1 in range(665,735)):
+        win=False
+        if (win == False):
+            textSize(100)
+            filter(BLUR, 5)
+            fill(255,255,255)         
+            stroke(255,255,255)
+            text("G A M E  O V E R", width/2-425, 300)
+    if (x1 in range(265,338) and y1 in range(665,735)):
+        win=False
+        if (win == False):
+            textSize(100)
+            filter(BLUR, 5)
+            fill(255,255,255)         
+            stroke(255,255,255)
+            text("G A M E  O V E R", width/2-425, 300)
+    if (x1 in range(405,478) and y1 in range(665,735)):
+        win=False
+        if (win == False):
+            textSize(100)
+            filter(BLUR, 5)
+            fill(255,255,255)         
+            stroke(255,255,255)
+            text("G A M E  O V E R", width/2-425, 300)
+    if (x1 in range(545,618) and y1 in range(665,735)):
+        win=False
+        if (win == False):
+            textSize(100)
+            filter(BLUR, 5)
+            fill(255,255,255)         
+            stroke(255,255,255)
+            text("G A M E  O V E R", width/2-425, 300)
+    if (x1 in range(685,758) and y1 in range(665,735)):
+        win=False
+        if (win == False):
+            textSize(100)
+            filter(BLUR, 5)
+            fill(255,255,255)         
+            stroke(255,255,255)
+            text("G A M E  O V E R", width/2-425, 300)
+    if (x1 in range(825,898) and y1 in range(665,735)):
+        win=False
+        if (win == False):
+            textSize(100)
+            filter(BLUR, 5)
+            fill(255,255,255)         
+            stroke(255,255,255)
+            text("G A M E  O V E R", width/2-425, 300)
+            
+    if (x1 in range(62,135) and y1 in range(765,835)):
+        win=False
+        if (win == False):
+            textSize(100)
+            filter(BLUR, 5)
+            fill(255,255,255)         
+            stroke(255,255,255)
+            text("G A M E  O V E R", width/2-425, 300)
+    if (x1 in range(202,275) and y1 in range(765,835)):
+        win=False
+        if (win == False):
+            textSize(100)
+            filter(BLUR, 5)
+            fill(255,255,255)         
+            stroke(255,255,255)
+            text("G A M E  O V E R", width/2-425, 300)
+    if (x1 in range(342,415) and y1 in range(765,835)):
+        win=False
+        if (win == False):
+            textSize(100)
+            filter(BLUR, 5)
+            fill(255,255,255)         
+            stroke(255,255,255)
+            text("G A M E  O V E R", width/2-425, 300)
+    if (x1 in range(482,555) and y1 in range(765,835)):
+        win=False
+        if (win == False):
+            textSize(100)
+            filter(BLUR, 5)
+            fill(255,255,255)         
+            stroke(255,255,255)
+            text("G A M E  O V E R", width/2-425, 300)
+    if (x1 in range(622,695) and y1 in range(765,835)):
+        win=False
+        if (win == False):
+            textSize(100)
+            filter(BLUR, 5)
+            fill(255,255,255)         
+            stroke(255,255,255)
+            text("G A M E  O V E R", width/2-425, 300)
+    if (x1 in range(762,835) and y1 in range(765,835)):
+        win=False
+        if (win == False):
+            textSize(100)
+            filter(BLUR, 5)
+            fill(255,255,255)         
+            stroke(255,255,255)
+            text("G A M E  O V E R", width/2-425, 300)
+        
+def keyReleased():
+    global x1,y1
+    if key == ' ':
+        background(0)
+        ellipse(x1,y1,10,10)
